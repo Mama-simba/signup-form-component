@@ -1,0 +1,105 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+
+--primary-pink: hsl(0, 100%, 74%);
+--primary-green: hsl(154, 59%, 51%);
+--accent-blue: hsl(248, 32%, 49%);
+--neutral-dark-blue: hsl(249, 10%, 26%);
+--neutral-grayish-blue: hsl(246, 25%, 77%);
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-image: url('./images/bg-intro-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary-pink);
+    color: #fffdfc;
+    
+}
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-info {
+    text-align: center;
+    padding-top: 20%;
+}
+
+.header-info p {
+    padding-top: 15px;
+    font-size: 13px;
+    
+}
+
+
+
+/*
+
+
+
+
+## Typography
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+
+
+Your users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Receive an error message when the `form` is submitted if:
+  - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
+  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
+
+*/
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 3%; 
+
+}
+
+.links {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.links a {
+  text-decoration: none;
+  color: #3e414a;
+}
+
+.links a:hover {
+  color: hsl(0, 100%, 74%);
+}
+
+.links i {
+  font-size: 18px;
+}
+
+.links i:hover {
+  color: hsl(0, 100%, 74%);
+}
