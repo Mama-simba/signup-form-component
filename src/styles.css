@@ -1,9 +1,9 @@
 
 
 /*
-Receive an error message when the form is submitted if:
-Any input field is empty
-The email address is not formatted correctly */
+Receive an error message when the `form` is submitted if:
+  - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
+  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*/
 
 
 
@@ -80,11 +80,12 @@ form {
   box-shadow: 1px 17px 10px -8px rgba(0,0,0,0.38);
 }
 
+
 input {
   display: block;
   width: 82%;
   height: 40px;
-  margin: 10px auto;
+  margin: 15px auto 0 auto;
 
   border: 1px solid hsla(246, 25%, 77%, 0.7);
   
@@ -97,10 +98,21 @@ input {
   font-size: 12px;
 }
 
+.error {
+  width: 82%;
+  margin: 5px auto 0 auto;
+  color: var(--primary-pink);
+  font-size: 9px;
+  text-align: right;
+  
+}
+
+
+
 .button {
   display: block;
   width: 82%;
-  margin: 5px auto;
+  margin: 25px auto 5px auto;
   background-color: var(--primary-green);
   box-shadow: inset 0 -4px 0 0 #31c381;
 
@@ -250,7 +262,7 @@ input {
   display: block;
   width: 82%;
   height: 40px;
-  margin: 10px auto;
+  margin: 20px auto 0 auto;
 
   border: 1px solid hsla(246, 25%, 77%, 0.7);
   
@@ -263,10 +275,20 @@ input {
   font-size: 12px;
 }
 
+
+.error {
+  width: 82%;
+  margin: 5px auto 0 auto;
+  color: var(--primary-pink);
+  font-size: 10px;
+  text-align: right;
+  
+}
+
 .button {
   display: block;
   width: 82%;
-  margin: 5px auto;
+  margin: 20px auto 10px auto;
   background-color: var(--primary-green);
   box-shadow: inset 0 -4px 0 0 #31c381;
 
