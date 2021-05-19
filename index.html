@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap"
     rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
   
   <title>Intro component with sign up form</title>
 
@@ -35,20 +35,32 @@
       
       <form>
         
-        <input type="text" placeholder="First Name" value="">
-        <p class="error" id="name-error">First Name cannot be empty</p>
+        <div>
+          <img id="icon-error" src="./src/images/icon-error.svg" alt="error message">
+          <input id="first-name" type="text" placeholder="First Name" value="">
+          <p class="error" id="name-error"></p>
+        </div>
         
-        <input type="text" placeholder="Last Name" value="">
-        <p class="error" id="lastname-error">Last Name cannot be empty</p>
+        <div>
+          <img id="icon-error" src="./src/images/icon-error.svg" alt="error message">
+          <input id="last-name" type="text" placeholder="Last Name" value="">
+          <p class="error" id="lastname-error"></p>
+        </div>
 
-        <input type="text" placeholder="Email Address" value="">
-        <p class="error" id="email-error">Looks like this is not an email</p>
-
-        <input type="text" placeholder="Password" value="">
-        <p class="error" id="password-error">Password cannot be empty</p>
+        <div><img id="icon-error" src="./src/images/icon-error.svg" alt="error message">
+        <input id="email" type="text" placeholder="Email Address" value="">
+        <p class="error" id="email-error"></p>
+      </div>
+        
+        <div>
+          <img id="icon-error" src="./src/images/icon-error.svg" alt="error message">
+          <input id="password" type="text" placeholder="Password" value="">
+          <p class="error" id="password-error"></p>
+        </div>  
+        
 
       
-        <a class="button" href="#">CLAIM YOUR FREE TRIAL</a>
+        <a class="button" id="button" href="#">CLAIM YOUR FREE TRIAL</a>
       
         <div class="terms">
           <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
@@ -77,7 +89,7 @@
   </footer>
 
 
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="./src/main.js"></script>
 
 
 </body>

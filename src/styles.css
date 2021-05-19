@@ -74,6 +74,17 @@ form {
 }
 
 
+
+img {
+  width: 20px;
+  display: block;
+  display: none;
+  position: relative;
+  top: 50px;
+  left: 80%;
+}
+
+
 input {
   display: block;
   width: 82%;
@@ -96,6 +107,7 @@ input {
   margin: 5px auto 0 auto;
   color: var(--primary-pink);
   font-size: 9px;
+  font-style: italic;
   text-align: right;
   
 }
@@ -251,6 +263,15 @@ form {
   box-shadow: 1px 17px 10px -8px rgba(0,0,0,0.38);
 }
 
+img {
+  width: 20px;
+  display: block;
+  display: none;
+  position: relative;
+  top: 55px;
+  left: 83%;
+}
+
 input {
   display: block;
   width: 82%;
@@ -269,12 +290,14 @@ input {
 }
 
 
+
 .error {
   width: 82%;
   margin: 5px auto 0 auto;
   color: var(--primary-pink);
   font-size: 10px;
   text-align: right;
+  font-style: italic;
   
 }
 
