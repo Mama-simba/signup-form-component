@@ -6,11 +6,9 @@ The email address is not formatted correctly (i.e. a correct email address shoul
 
 let firstName = document.querySelector("#first-name");
 let lastName = document.querySelector("#last-name");
+
 let email = document.querySelector("#email");
-
 const validRegex = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
-
-
 
 let password = document.querySelector("#password");
 let iconName = document.querySelector("#icon-error-name");
@@ -44,6 +42,8 @@ function signUp(event) {
         let errorEmailMessage = document.querySelector("#email-error");
         errorEmailMessage.innerHTML = "Email cannot be empty";
         iconEmail.style.visibility = "visible";
+
+    //Incorrect email format    
     } else if (!email.value.match(validRegex)){
         let errorEmailMessage = document.querySelector("#email-error");
         errorEmailMessage.innerHTML = "Looks like this is not an email";
